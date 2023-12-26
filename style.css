@@ -105,12 +105,12 @@ img[src*="language"] {
 }
 .email {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   width: 600px;
 }
 .email input {
-  flex: 2;
+  width: 380px;
   height: 60px;
   background-color: rgba(20, 20, 20, 0.301);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -126,7 +126,7 @@ img[src*="language"] {
   height: 60px;
   font-weight: 700;
   font-size: 24px;
-  flex: 1;
+  width: 220px;
   padding: 0 10px;
 }
 .seperate {
@@ -142,6 +142,7 @@ img[src*="language"] {
 }
 .section img {
   height: 75%;
+  /* width: 100%; */
 }
 .images {
   position: relative;
@@ -149,7 +150,7 @@ img[src*="language"] {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 60%;
+  /* width: 60%; */
 }
 .section p {
   margin: 20px 0;
@@ -157,6 +158,7 @@ img[src*="language"] {
 video {
   position: absolute;
   height: 45%;
+  /* width: 75%; */
   z-index: -1;
 }
 .apple video {
@@ -211,7 +213,7 @@ u {
 }
 @media screen and (max-width: 1280px) {
   nav {
-    width: 95vw;
+    width: 93vw;
   }
   .section {
     width: 95vw;
@@ -244,10 +246,22 @@ u {
     flex-direction: column;
     height: 720px;
     text-align: center;
+    justify-content: center;
   }
-  .section .texts {
-    margin-top: 60px;
-    margin-bottom: -60px;
+  .section img {
+    height: 100%;
+    /* width: 80%; */
+  }
+  video {
+    height: 60%;
+  }
+  .apple video {
+    top: 12%;
+    height: 45%;
+  }
+  .images {
+    height: 70%;
+    /* width: 100%; */
   }
   .even {
     flex-direction: column-reverse;
@@ -264,5 +278,61 @@ u {
   footer {
     padding-top: 30px;
     padding-bottom: 0;
+  }
+  .nav-btns {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .section {
+    height: 110vw;
+  }
+  .start {
+    padding: 0 50px;
+  }
+  .email input {
+    width: 45vw;
+  }
+  .email {
+    padding: 0 50px;
+  }
+  .faqs .text3 {
+    padding: 0 50px;
+    text-align: center;
+  }
+  footer {
+    padding-left: 20px;
+  }
+  .images img {
+    height: 70%;
+  }
+  video {
+    height: 40%;
+  }
+  .apple video {
+    height: 33%;
+    top: 23%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .email {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav select {
+    display: none;
+  }
+  nav .lang {
+    width: 70px;
+  }
+  .email input {
+    width: 80vw;
+    height: 50px;
+  }
+  .email .btn {
+    width: 165px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
   }
 }
