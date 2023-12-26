@@ -316,8 +316,10 @@ u {
 }
 @media screen and (max-width: 600px) {
   .email {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+  }
+  .login {
+    height: auto;
   }
   nav select {
     display: none;
