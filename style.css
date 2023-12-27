@@ -317,9 +317,11 @@ u {
 @media screen and (max-width: 600px) {
   .email {
     flex-direction: column;
+    width: auto;
+    padding: 0;
   }
   .login {
-    height: auto;
+    min-height: 550px;
   }
   nav select {
     display: none;
